@@ -164,7 +164,7 @@ let numberUnFundedGames = GAMES_JSON.filter((games)=> {
 const displayStr = `<div>A total of $${moneyRaised} has been raised for ${GAMES_JSON.length} games. Currently, ${numberUnFundedGames>1 ? numberUnFundedGames + " games remain" : numberUnFundedGames + " game remains"} 
  unfunded. We need your help to fund these amazing games!</div>`;
 // create a new DOM element containing the template string and append it to the description container
-document.getElementById('description-container').innerHTML = displayStr;
+document.getElementById('description-container').innerHTML += displayStr;
 /************************************************************************************
  * Challenge 7: Select & display the top 2 games
  * Skills used: spread operator, destructuring, template literals, sort 
