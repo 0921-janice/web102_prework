@@ -18,9 +18,24 @@ body {
     margin-right: -10px;
     margin-top: -10px;
 }
+#search-bar{
+    margin-left: auto;
+    background-color: lightblue;
+    padding: 10px;
+    border-color: #758190;
+    border-radius: 10px;
+    border-width: 3px;
+    font-size: medium;
+}
 
 .stats-container {
     display: flex;
+    align-items: flex;
+}
+
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
